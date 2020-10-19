@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" type="text/css" href="https://elasticbeanstalk-us-west-2-544012685056.s3-us-west-2.amazonaws.com/slick-1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://elasticbeanstalk-us-west-2-544012685056.s3-us-west-2.amazonaws.com/slick-1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="https://elasticbeanstalk-us-west-2-544012685056.s3-us-west-2.amazonaws.com/css/styles.css"/>				
+<title></title>
+</head>
+
+<body style="">
+  <div class="crazy-carousel">
+    <div><img src="https://elasticbeanstalk-us-west-2-544012685056.s3-us-west-2.amazonaws.com/img/price_match/slider/1.jpg" class="crazy-carousel-img-300"/></div>
+    <div><img src="https://elasticbeanstalk-us-west-2-544012685056.s3-us-west-2.amazonaws.com/img/price_match/slider/8.jpg" class="crazy-carousel-img-300"/></div>
+    <div><img src="https://elasticbeanstalk-us-west-2-544012685056.s3-us-west-2.amazonaws.com/img/price_match/slider/10.jpg" class="crazy-carousel-img-300"/></div>
+    <div><img src="https://elasticbeanstalk-us-west-2-544012685056.s3-us-west-2.amazonaws.com/img/price_match/slider/11.jpg" class="crazy-carousel-img-300"/></div>
+    <div><img src="https://elasticbeanstalk-us-west-2-544012685056.s3-us-west-2.amazonaws.com/img/price_match/slider/12.jpg" class="crazy-carousel-img-300"/></div>
+    <div><img src="https://elasticbeanstalk-us-west-2-544012685056.s3-us-west-2.amazonaws.com/img/price_match/slider/18.jpg" class="crazy-carousel-img-300"/></div>
+    <div><img src="https://elasticbeanstalk-us-west-2-544012685056.s3-us-west-2.amazonaws.com/img/price_match/slider/19.jpg" class="crazy-carousel-img-300"/></div>
+    <div><img src="https://elasticbeanstalk-us-west-2-544012685056.s3-us-west-2.amazonaws.com/img/price_match/slider/20.jpg" class="crazy-carousel-img-300"/></div>
+
+  </div>
+  <script type="text/javascript" src="https://elasticbeanstalk-us-west-2-544012685056.s3-us-west-2.amazonaws.com/jquery/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="https://elasticbeanstalk-us-west-2-544012685056.s3-us-west-2.amazonaws.com/slick-1.8.1/slick/slick.min.js"></script>
+  <script type="text/javascript" src="https://elasticbeanstalk-us-west-2-544012685056.s3-us-west-2.amazonaws.com/js/mobileWidth.js"></script>
+
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+        $('.slider').on( 'touchend touchcancel touchmove', function() { $(this).slick('slickPlay'); } );
+        $('.crazy-carousel').slick({
+          infinite: true,
+          autoplay: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          variableWidth: true,
+          speed: 500,
+          autoplaySpeed: 3000,
+          pauseOnFocus: false,
+          pauseOnHover: false,
+          pauseOnDotsHover: false,
+          waitForAnimate: false,
+          swipe: false,
+        });
+        $( '.crazy-carousel-img' ).each(function () {
+          this.style.setProperty( 'height', '300px', 'important' );
+          this.style.setProperty( 'width', $('.header', parent.document).width().toString() + 'px', 'important' );
+        });
+      } else {
+        $('.crazy-carousel').slick({
+          infinite: true,
+          slidesToShow: 3,
+          autoplay: true,
+          autoplaySpeed: 4000,
+          speed: 1000,
+          pauseOnFocus: false,
+          pauseOnHover: false,
+          pauseOnDotsHover: false,
+          variableWidth: true,
+        });
+      }
+    });
+  </script>
+  <!-- <script src="../js/mobile.js"></script> -->
+
+</body>
+
+</html>
