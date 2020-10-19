@@ -1,0 +1,9 @@
+services:
+  php:
+    image: tugboatqa/php:7.4-apache
+    default: true
+    http: false
+    commands:
+      init:
+        - a2enmod rewrite headers
+        - ln -snf $TUGBOAT_ROOT $DOCROOT
