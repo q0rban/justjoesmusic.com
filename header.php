@@ -1,4 +1,4 @@
-<div class="row header center asyncImage" data-src="<?php echo $S3_BUCKET; ?>img/top_background2.jpg" id="header">
+<div class="row header center asyncImage" data-src="<?php print $path_to_root; ?>img/top_background3.jpg" id="header">
   <div class="col scroll-4" style="text-align: center;">
     <img src="<?php echo $S3_BUCKET; ?>img/logo.png" id="header-logo" style="text-align:center; width: 237px;" />
     <div class="header-transparent" id="header-transparent-width" style="margin-bottom: 20px;">
@@ -122,12 +122,12 @@
       echo ("<div class='alert alert-success center'>Your e-mail has been sent. Thanks for being in touch!</div>");
     }
     ?>
-    <div class='alert alert-primary center' style="margin:0;">Custom Showroom Hours Starting June 9th<br />Tuesday – Wednesday – Thursday<br />1:00-5:00<br />Or by appointment.<br />Please, one family member per visit when possible.</div>
-    <div class="temp-link">
-      <a href="<?php echo $path_to_root ?>covid-19">
-        <div class='alert center background-esurance temp-link' style="margin:0;">Keeping it Safe! Our outside pickup option will also remain in place. It’s been working great! Click this alert for details.</div>
-      </a>
-    </div>
+    <div class='alert alert-primary center' style="margin:0;">Custom Showroom Hours Starting June 9th<br />Tuesday – Wednesday – Thursday<br />1:00-5:00<br />Or any other time happily <a href="<?php print $path_to_root; ?>contact_us">by appointment</a>.<br />Please, one family member per visit when possible.</div>
+<!--    <div class="temp-link">-->
+<!--      <a href="--><?php //echo $path_to_root ?><!--covid-19">-->
+<!--        <div class='alert center background-esurance temp-link' style="margin:0;">Keeping it Safe! Our outside pickup option will also remain in place. It’s been working great! Click this alert for details.</div>-->
+<!--      </a>-->
+<!--    </div>-->
   </div>
 </div>
 <script>
