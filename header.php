@@ -123,11 +123,11 @@
     }
     ?>
     <div class='alert alert-primary center' style="margin:0;">Custom Showroom Hours Starting June 9th<br />Tuesday – Wednesday – Thursday<br />1:00-5:00<br />Or any other time happily by appointment.<br />Please, one family member per visit when possible.</div>
-    <div class="temp-link">
-      <a href="<?php echo $path_to_root ?>covid-19">
-        <div class='alert center background-esurance temp-link' style="margin:0;">Keeping it Safe! Our outside pickup option will also remain in place. It’s been working great! Click this alert for details.</div>
-      </a>
-    </div>
+<!--    <div class="temp-link">-->
+<!--      <a href="--><?php //echo $path_to_root ?><!--covid-19">-->
+<!--        <div class='alert center background-esurance temp-link' style="margin:0;">Keeping it Safe! Our outside pickup option will also remain in place. It’s been working great! Click this alert for details.</div>-->
+<!--      </a>-->
+<!--    </div>-->
   </div>
 </div>
 <script>
