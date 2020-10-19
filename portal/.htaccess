@@ -1,0 +1,18 @@
+<FilesMatch "\.(php|html|htm|css|js)$">
+    AuthType Basic
+    AuthName "portal"
+    AuthUserFile "/home/gn35lvhih84s/.htpasswds/public_html/portal/passwd"
+    require valid-user
+</FilesMatch>
+
+<filesMatch ".(html|htm|php)$">
+	FileETag None
+	<ifModule mod_headers.c>
+		Header unset ETag
+		Header set Cache-Control "max-age=0, no-cache, no-store, must-revalidate"
+		Header set Pragma "no-cache"
+		Header set Expires "Wed, 08 Jan 1975 05:00:00 GMT"
+	</ifModule>
+</filesMatch>
+
+ErrorDocument 401 /401.html

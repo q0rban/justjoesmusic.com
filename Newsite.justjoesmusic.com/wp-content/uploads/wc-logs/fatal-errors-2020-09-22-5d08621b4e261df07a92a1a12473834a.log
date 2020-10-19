@@ -1,0 +1,10 @@
+2020-09-22T21:28:43+00:00 CRITICAL Uncaught Error: Call to a member function get_sku() on null in /home/gn35lvhih84s/public_html/Newsite.justjoesmusic.com/wp-content/themes/Divi/functions.php:3
+Stack trace:
+#0 /home/gn35lvhih84s/public_html/Newsite.justjoesmusic.com/wp-settings.php(514): include()
+#1 /home/gn35lvhih84s/public_html/Newsite.justjoesmusic.com/wp-config.php(106): require_once('/home/gn35lvhih...')
+#2 /home/gn35lvhih84s/public_html/Newsite.justjoesmusic.com/wp-load.php(37): require_once('/home/gn35lvhih...')
+#3 /home/gn35lvhih84s/public_html/Newsite.justjoesmusic.com/wp-admin/admin.php(34): require_once('/home/gn35lvhih...')
+#4 /home/gn35lvhih84s/public_html/Newsite.justjoesmusic.com/wp-admin/theme-editor.php(10): require_once('/home/gn35lvhih...')
+#5 {main}
+  thrown in /home/gn35lvhih84s/public_html/Newsite.justjoesmusic.com/wp-content/themes/Divi/functions.php on line 3
+
