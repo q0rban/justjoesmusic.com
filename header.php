@@ -1,4 +1,4 @@
-<div class="row header center asyncImage" data-src="<?php echo $S3_BUCKET; ?>img/top_background2.jpg" id="header">
+<div class="row header center asyncImage" data-src="/img/top_background3.jpg" id="header">
   <div class="col scroll-4" style="text-align: center;">
     <img src="<?php echo $S3_BUCKET; ?>img/logo.png" id="header-logo" style="text-align:center; width: 237px;" />
     <div class="header-transparent" id="header-transparent-width" style="margin-bottom: 20px;">
